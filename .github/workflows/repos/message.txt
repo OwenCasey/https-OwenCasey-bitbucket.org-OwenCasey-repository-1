@@ -1,0 +1,159 @@
+
+ownie@DESKTOP-KO5G1SS MINGW64 ~/OneDrive/Documents/repository-1 (master)
+$ cd ~
+
+ownie@DESKTOP-KO5G1SS MINGW64 ~ (master)
+$ mkdir repos
+mkdir: cannot create directory ‘repos’: File exists
+
+ownie@DESKTOP-KO5G1SS MINGW64 ~ (master)
+$ mkdir repository
+
+ownie@DESKTOP-KO5G1SS MINGW64 ~ (master)
+$ cd ~/repos
+
+ownie@DESKTOP-KO5G1SS MINGW64 ~/repos (master)
+$ git clone  https://OwenCasey@bitbucket.org/OwenCasey/repository-1.git
+Cloning into 'repository-1'...
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 0 (delta 0)
+Unpacking objects: 100% (4/4), 1.71 KiB | 134.00 KiB/s, done.
+
+ownie@DESKTOP-KO5G1SS MINGW64 ~/repos (master)
+$ git clone  https://OwenCasey@bitbucket.org/OwenCasey/repository-1.git         fatal: destination path 'repository-1' already exists and is not an empty directory.
+
+ownie@DESKTOP-KO5G1SS MINGW64 ~/repos (master)
+$ ls
+repository-1/
+
+ownie@DESKTOP-KO5G1SS MINGW64 ~/repos (master)
+$ cd ~/repository/bitbucketstationlocations/
+bash: cd: /c/Users/ownie/repository/bitbucketstationlocations/: No such file or directory
+
+ownie@DESKTOP-KO5G1SS MINGW64 ~/repos (master)
+$ echo "Earth's Moon" >> locations.text
+
+ownie@DESKTOP-KO5G1SS MINGW64 ~/repos (master)
+$ echo "Earth's Moon" >> locations.txt
+
+ownie@DESKTOP-KO5G1SS MINGW64 ~/repos (master)
+$ git push all
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream all master
+
+
+ownie@DESKTOP-KO5G1SS MINGW64 ~/repos (master)
+$ git push --set-upstream all master
+error: src refspec master does not match any
+error: failed to push some refs to 'all'
+
+ownie@DESKTOP-KO5G1SS MINGW64 ~/repos (master)
+$ git commit -m
+error: switch `m' requires a value
+
+ownie@DESKTOP-KO5G1SS MINGW64 ~/repos (master)
+$ git commit -m 1
+warning: could not open directory 'Application Data/': Permission denied
+warning: could not open directory 'Cookies/': Permission denied
+warning: could not open directory 'Documents/My Music/': Permission denied
+warning: could not open directory 'Documents/My Pictures/': Permission denied
+warning: could not open directory 'Documents/My Videos/': Permission denied
+warning: could not open directory 'Local Settings/': Permission denied
+warning: could not open directory 'My Documents/': Permission denied
+warning: could not open directory 'NetHood/': Permission denied
+warning: could not open directory 'PrintHood/': Permission denied
+warning: could not open directory 'Recent/': Permission denied
+warning: could not open directory 'SendTo/': Permission denied
+warning: could not open directory 'Start Menu/': Permission denied
+warning: could not open directory 'Templates/': Permission denied
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../.appletviewer
+        ../.bash_history
+        ../.gitconfig
+        ../.kdiff3rc
+        ../.mputils/
+        ../.packettracer
+        ../.vscode/
+        ../3D Objects/
+        ../AppData/
+        ../Bouncing Balls/
+        ../Cisco Packet Tracer 7.3.1/
+        ../Contacts/
+        ../Desktop/
+        ../Documents/
+        ../Downloads/
+        ../Favorites/
+        ../Links/
+        ../MicrosoftEdgeBackups/
+        ../Music/
+        ../NTUSER.DAT
+        ../NTUSER.DAT{efa7ff43-cb37-11e9-ace0-d6c5fe049bb3}.TM.blf
+        ../NTUSER.DAT{efa7ff43-cb37-11e9-ace0-d6c5fe049bb3}.TMContainer00000000000000000001.regtrans-ms
+        ../NTUSER.DAT{efa7ff43-cb37-11e9-ace0-d6c5fe049bb3}.TMContainer00000000000000000002.regtrans-ms
+        ../OneDrive/
+        ../Pictures/
+        ../Saved Games/
+        ../Searches/
+        ../Videos/
+        ../forge-1.14.3-27.0.16-installer.jar.log
+        ../mercurial.ini
+        ../ntuser.dat.LOG1
+        ../ntuser.dat.LOG2
+        ../ntuser.ini
+        ./
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ownie@DESKTOP-KO5G1SS MINGW64 ~/repos (master)
+$ git config --global user.email A00273916@student.ait.ie
+
+ownie@DESKTOP-KO5G1SS MINGW64 ~/repos (master)
+$ git init
+Initialized empty Git repository in C:/Users/ownie/repos/.git/
+gi
+ownie@DESKTOP-KO5G1SS MINGW64 ~/repos (master)
+$ git add README.md
+fatal: pathspec 'README.md' did not match any files
+
+ownie@DESKTOP-KO5G1SS MINGW64 ~/repos (master)
+$ git commit -m "first commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        locations.text
+        locations.txt
+        repository-1/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ownie@DESKTOP-KO5G1SS MINGW64 ~/repos (master)
+$ git branch -M main
+error: refname refs/heads/master not found
+fatal: Branch rename failed
+g
+ownie@DESKTOP-KO5G1SS MINGW64 ~/repos (master)
+$ git remote add origin https://github.com/OwenCasey/https-OwenCasey-bitbucket.org-OwenCasey-repository-1.git
+
+ownie@DESKTOP-KO5G1SS MINGW64 ~/repos (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/OwenCasey/https-OwenCasey-bitbucket.org-OwenCasey-repository-1.git'
+
+ownie@DESKTOP-KO5G1SS MINGW64 ~/repos (master)
+$ git push all
+error: src refspec refs/heads/master does not match any
+error: failed to push some refs to 'all'
+
+ownie@DESKTOP-KO5G1SS MINGW64 ~/repos (master)
+$
